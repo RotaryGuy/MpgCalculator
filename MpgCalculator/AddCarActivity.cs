@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace MpgCalculator
 {
-    [Activity(Label = "AddCarActivity")]
+    [Activity(Label = "Add A Car to Track")]
     public class AddCarActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
