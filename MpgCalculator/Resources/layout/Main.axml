@@ -11,8 +11,8 @@
         android:layout_gravity="center_horizontal"
         android:paddingBottom="10dp" />
     <Button
-        android:id="@+id/MyButton"
+        android:id="@+id/addCarButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Hello" />
+        android:text="Add Car" />
 </LinearLayout>

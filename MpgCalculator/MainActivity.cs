@@ -10,10 +10,12 @@ using SQLite;
 
 namespace MpgCalculator
 {
-    [Activity(Label = "MpgCalculator", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "MPG Tracker", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         int count = 1;
+
+        Button addCarButton;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -25,12 +27,9 @@ namespace MpgCalculator
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
-
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
-
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            
+            FindViews();
+            HandleEvents();
 
             createDatabase(pathToDatabase);
         }
@@ -44,8 +43,24 @@ namespace MpgCalculator
             }
             catch (SQLiteException ex)
             {
-                return ex.Message;
+                
             }
+        }
+
+        private void FindViews()
+        {
+            addCarButton = FindViewById<Button>(Resource.Id.addCarButton);
+        }
+
+        private void HandleEvents()
+        {
+            addCarButton.Click += AddCarButton_Click;
+        }
+
+        private void AddCarButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(AddCarActivity));
+            StartActivity(intent);
         }
     }
 }

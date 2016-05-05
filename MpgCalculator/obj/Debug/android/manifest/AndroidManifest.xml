@@ -4,8 +4,9 @@
   <uses-sdk android:minSdkVersion="16" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="MpgCalculator" android:name="mono.android.app.Application" android:allowBackup="true" android:icon="@drawable/icon" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="MpgCalculator" android:name="md52b55f24ded9a4820c369b4b6a28bfc72.MainActivity">
+  <application android:label="MpgCalculator" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="AddCarActivity" android:name="md52b55f24ded9a4820c369b4b6a28bfc72.AddCarActivity" />
+    <activity android:icon="@drawable/icon" android:label="MPG Tracker" android:name="md52b55f24ded9a4820c369b4b6a28bfc72.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

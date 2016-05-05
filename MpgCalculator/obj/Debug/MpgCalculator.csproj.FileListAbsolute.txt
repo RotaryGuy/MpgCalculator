@@ -2,7 +2,6 @@ C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\bin\Debug\MpgCalcul
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\bin\Debug\MpgCalculator.pdb
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\bin\Debug\MpgCalculator.MpgCalculator.apk
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\bin\Debug\MpgCalculator.MpgCalculator-Signed.apk
-C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\MpgCalculator.csprojResolveAssemblyReference.cache
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\MpgCalculator.dll
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\MpgCalculator.pdb
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\android\bin\MpgCalculator.MpgCalculator.apk
@@ -11,5 +10,6 @@ C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\res\value
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\res\drawable\icon.png
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\R.cs.flag
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\uploadflags.txt
+C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\res\layout\addcarview.xml
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\MpgCalculator.dll.mdb
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\bin\Debug\MpgCalculator.dll.mdb

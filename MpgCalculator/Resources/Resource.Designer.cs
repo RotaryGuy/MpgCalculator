@@ -61,7 +61,7 @@ namespace MpgCalculator
 		{
 			
 			// aapt resource value: 0x7f050001
-			public const int MyButton = 2131034113;
+			public const int addCarButton = 2131034113;
 			
 			// aapt resource value: 0x7f050000
 			public const int splashImage = 2131034112;
@@ -80,7 +80,10 @@ namespace MpgCalculator
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int AddCarView = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
 			
 			static Layout()
 			{
