@@ -1,0 +1,9 @@
+C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\assemblies\MpgCalculator.dll
+C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\assemblies\Mono.Android.dll
+C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\assemblies\mscorlib.dll
+C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\assemblies\System.Core.dll
+C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\assemblies\System.dll
+C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\assemblies\System.Xml.dll
+C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\assemblies\System.Xml.Linq.dll
+C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\assemblies\System.Runtime.Serialization.dll
+C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\assemblies\System.ServiceModel.Internals.dll

@@ -1,0 +1,4 @@
+MpgCalculator.MainActivity, MpgCalculator;md52b55f24ded9a4820c369b4b6a28bfc72.MainActivity
+MpgCalculator.MainActivity, MpgCalculator, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52b55f24ded9a4820c369b4b6a28bfc72.MainActivity
+MpgCalculator.MainActivity;md52b55f24ded9a4820c369b4b6a28bfc72.MainActivity
+mpgcalculator.MainActivity;md52b55f24ded9a4820c369b4b6a28bfc72.MainActivity
