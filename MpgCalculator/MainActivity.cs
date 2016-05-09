@@ -16,14 +16,18 @@ namespace MpgCalculator
         int count = 1;
 
         Button addCarButton;
+        Button viewCarButton;
+
+        string docsFolder;
+        string pathToDatabase;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
             // create DB path
-            var docsFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
-            var pathToDatabase = System.IO.Path.Combine(docsFolder, "db_sqlnet.db");
+            docsFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments);
+            pathToDatabase = System.IO.Path.Combine(docsFolder, "db_sqlnet.db");
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
@@ -49,16 +53,26 @@ namespace MpgCalculator
         private void FindViews()
         {
             addCarButton = FindViewById<Button>(Resource.Id.addCarButton);
+            viewCarButton = FindViewById<Button> (Resource.Id.viewCarsButton);
         }
 
         private void HandleEvents()
         {
             addCarButton.Click += AddCarButton_Click;
+            viewCarButton.Click += ViewCarButton_Click;
+        }
+
+        private void ViewCarButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(ViewCarsActivity));
+            intent.PutExtra("path", pathToDatabase);
+            StartActivity(intent);
         }
 
         private void AddCarButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(AddCarActivity));
+            intent.PutExtra("path", pathToDatabase);
             StartActivity(intent);
         }
     }

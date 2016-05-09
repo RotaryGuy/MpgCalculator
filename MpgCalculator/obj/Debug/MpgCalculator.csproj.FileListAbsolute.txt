@@ -11,5 +11,7 @@ C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\res\drawa
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\R.cs.flag
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\uploadflags.txt
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\res\layout\addcarview.xml
+C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\res\layout\viewcarsview.xml
+C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\MpgCalculator.csprojResolveAssemblyReference.cache
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\obj\Debug\MpgCalculator.dll.mdb
 C:\Development\Learnings\Android\MpgCalculator\MpgCalculator\bin\Debug\MpgCalculator.dll.mdb

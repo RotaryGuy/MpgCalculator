@@ -14,5 +14,12 @@
         android:id="@+id/addCarButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Add Car" />
+        android:text="Add Car"
+        android:paddingBottom="10dp" />
+    <Button
+        android:id="@+id/viewCarsButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="View Cars"
+        android:paddingBottom="10dp" />
 </LinearLayout>

@@ -12,6 +12,7 @@ using Android.Views;
 using Android.Widget;
 using Java.Security;
 using MpgCalculator.Tables;
+using SQLite;
 
 namespace MpgCalculator
 {
@@ -23,6 +24,8 @@ namespace MpgCalculator
         EditText carModelText;
         EditText carMileageText;
         Button addCarButton;
+
+        string pathToDatabase;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -37,6 +40,7 @@ namespace MpgCalculator
 
         private void FindViews()
         {
+            pathToDatabase = Intent.Extras.GetString("path");
             carYearText = FindViewById<EditText>(Resource.Id.carYearText);
             carMakeText = FindViewById<EditText>(Resource.Id.carMakeText);
             carModelText = FindViewById<EditText>(Resource.Id.carModelText);
@@ -59,8 +63,25 @@ namespace MpgCalculator
             carToInsert.carMileage = Convert.ToInt32(carMileageText.Text);
             carToInsert.carYear = Convert.ToInt32(carYearText.Text);
             AlertDialog.Builder alert = new AlertDialog.Builder(this);
-            alert.SetMessage(string.Format("{0} {1} {2}", carToInsert.carYear, carToInsert.carMake, carToInsert.carModel));
-            alert.Show();
+
+            try
+            {
+                var db = new SQLiteConnection(pathToDatabase);
+                if (db.Insert(carToInsert) != 0)
+                    db.Update(carToInsert);
+                alert.SetMessage(string.Format("{0} {1} {2} added", carToInsert.carYear, carToInsert.carMake,
+                    carToInsert.carModel));
+            }
+            catch (SQLiteException ex)
+            {
+                alert.SetMessage("Failed to insert!");
+            }
+            finally
+            {
+                alert.Show();
+            }
+            
+            
           
         }
 

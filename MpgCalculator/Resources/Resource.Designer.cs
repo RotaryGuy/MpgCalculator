@@ -63,6 +63,9 @@ namespace MpgCalculator
 			// aapt resource value: 0x7f050004
 			public const int addCarButton = 2131034116;
 			
+			// aapt resource value: 0x7f050007
+			public const int carListView = 2131034119;
+			
 			// aapt resource value: 0x7f050001
 			public const int carMakeText = 2131034113;
 			
@@ -77,6 +80,9 @@ namespace MpgCalculator
 			
 			// aapt resource value: 0x7f050005
 			public const int splashImage = 2131034117;
+			
+			// aapt resource value: 0x7f050006
+			public const int viewCarsButton = 2131034118;
 			
 			static Id()
 			{
@@ -96,6 +102,9 @@ namespace MpgCalculator
 			
 			// aapt resource value: 0x7f030001
 			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int ViewCarsView = 2130903042;
 			
 			static Layout()
 			{
