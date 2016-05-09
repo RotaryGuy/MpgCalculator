@@ -20,6 +20,7 @@ namespace MpgCalculator
     {
         ListView carListView;
         string pathToDatabase;
+        List<Car> cars;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -30,6 +31,7 @@ namespace MpgCalculator
 
             FindViews();
             PopulateCarList();
+            HandleEvents();
         }
 
         private void FindViews()
@@ -44,7 +46,7 @@ namespace MpgCalculator
             {
                 var db = new SQLiteConnection(pathToDatabase);
                 List<string> carList = new List<string>();
-                List<Car> cars = db.Query<Car>("SELECT * FROM CAR");
+                cars = db.Query<Car>("SELECT * FROM CAR");
 
                 foreach (Car c in cars)
                 {
@@ -61,7 +63,19 @@ namespace MpgCalculator
             {
                 //alert.SetMessage("Failed to insert!");
             }
-           
+        }
+
+        private void HandleEvents()
+        {
+            carListView.ItemClick += CarListView_ItemClick;
+        }
+
+        private void CarListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            Car selectedCar = cars[e.Position];
+            AlertDialog.Builder alert = new AlertDialog.Builder(this);
+            alert.SetMessage(selectedCar.carMake);
+            alert.Show();
         }
     }
 }
