@@ -27,11 +27,10 @@ namespace MpgCalculator
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
-            
-            FindViews();
-            HandleEvents();
 
             createDatabase(pathToDatabase);
+            FindViews();
+            HandleEvents();
         }
 
         private void createDatabase(string path)

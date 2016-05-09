@@ -14,9 +14,12 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int addCarButton=0x7f050002;
-        public static final int splashImage=0x7f050001;
-        public static final int yearEditText=0x7f050000;
+        public static final int addCarButton=0x7f050004;
+        public static final int carMakeText=0x7f050001;
+        public static final int carMileageText=0x7f050003;
+        public static final int carModelText=0x7f050002;
+        public static final int carYearText=0x7f050000;
+        public static final int splashImage=0x7f050005;
     }
     public static final class layout {
         public static final int addcarview=0x7f030000;

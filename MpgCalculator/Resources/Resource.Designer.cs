@@ -60,14 +60,23 @@ namespace MpgCalculator
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050002
-			public const int addCarButton = 2131034114;
+			// aapt resource value: 0x7f050004
+			public const int addCarButton = 2131034116;
 			
 			// aapt resource value: 0x7f050001
-			public const int splashImage = 2131034113;
+			public const int carMakeText = 2131034113;
+			
+			// aapt resource value: 0x7f050003
+			public const int carMileageText = 2131034115;
+			
+			// aapt resource value: 0x7f050002
+			public const int carModelText = 2131034114;
 			
 			// aapt resource value: 0x7f050000
-			public const int yearEditText = 2131034112;
+			public const int carYearText = 2131034112;
+			
+			// aapt resource value: 0x7f050005
+			public const int splashImage = 2131034117;
 			
 			static Id()
 			{
